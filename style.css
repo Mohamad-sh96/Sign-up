@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 900px;
+    height: 600px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+}
+
+.left-panel {
+    flex: 1;
+    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-panel h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.left-panel p {
+    font-size: 16px;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+.switch-page {
+    margin-top: 20px;
+}
+
+.switch-page a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.switch-page a:hover {
+    color: #f0f0f0;
+}
+
+.right-panel {
+    flex: 1;
+    padding: 40px;
+    background: #2d2d2d;
+    color: white;
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    background: #3d3d3d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    background: #454545;
+    box-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ccc;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #ff6b6b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #ff8787;
+    transform: translateY(-2px);
+}
+
+.error {
+    color: #ff8787;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+.terms {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+}
+
+.terms a {
+    color: #ff6b6b;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 20px;
+    }
+    .left-panel {
+        padding: 20px;
+    }
+}
